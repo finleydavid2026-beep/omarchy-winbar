@@ -18,13 +18,13 @@ A Windows-style taskbar for [Omarchy](https://omarchy.org/).
 
 ```bash
 omarchy plugin add https://github.com/<you>/omarchy-winbar.git --yes
-~/.config/omarchy/plugins/omarchy-winbar/install.sh
+~/.config/omarchy/plugins/winbar/install.sh
 ```
 
 Taskbar chrome only, leaving your tray icons alone:
 
 ```bash
-~/.config/omarchy/plugins/omarchy-winbar/install.sh --no-tray
+~/.config/omarchy/plugins/winbar/install.sh --no-tray
 ```
 
 `--dry-run` prints what would change without touching anything.
@@ -32,12 +32,12 @@ Taskbar chrome only, leaving your tray icons alone:
 ## Uninstall
 
 ```bash
-~/.config/omarchy/plugins/omarchy-winbar/uninstall.sh
+~/.config/omarchy/plugins/winbar/uninstall.sh
 ```
 
 Restores `shell.json` and `shell.toml` from the backups taken at install time
 and disables the plugin. The plugin directory itself is left in place — remove
-it with `rm -rf ~/.config/omarchy/plugins/omarchy-winbar`.
+it with `rm -rf ~/.config/omarchy/plugins/winbar`.
 
 ## What it changes
 
