@@ -42,7 +42,7 @@ Item {
 
   Text {
     textFormat: Text.PlainText
-    text: ""
+    text: "\ue900"
     // Omarchy brand green, matching the reference mark.
     color: "#8bc957"
     font.family: "omarchy"
