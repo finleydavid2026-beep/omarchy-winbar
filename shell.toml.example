@@ -1,0 +1,25 @@
+[font]
+base-size = 12
+
+# Machine-level shell override for Omarchy.
+#
+# Layered on top of whatever theme is active and watched live, so saving this
+# file restyles the shell without a restart. Keys mirror the theme's
+# shell.toml; anything set here wins over the theme.
+#
+# See /usr/share/omarchy/shell/Commons/Color.qml (surface colours) and
+# Style.qml ([bar] / [font] / [spacing] tokens).
+
+[bar]
+# Windows-style dark grey taskbar instead of the near-black theme background.
+background = "#232323"
+background-alpha = 1.0
+
+# Bigger taskbar, with proportionally larger icon slots so the glyphs do not
+# look lost in the extra height.
+size-horizontal = 42
+size-vertical = 46
+icon-slot = 32
+icon-canvas = 22
+icon-font = 17
+status-slot = 26

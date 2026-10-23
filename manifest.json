@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "winbar",
+  "name": "Windows-style taskbar",
+  "version": "1.0.0",
+  "author": "omarchy-winbar contributors",
+  "license": "MIT",
+  "description": "A Windows-style taskbar for Omarchy: Omarchy-mark start button, search pill, centred pinned apps, Windows-drawn tray icons, and a labelled show-desktop button.",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "WinStart.qml"
+  },
+  "barWidget": {
+    "displayName": "Taskbar start button",
+    "description": "Omarchy mark start button that opens the Omarchy menu",
+    "category": "Compositor",
+    "allowMultiple": false
+  }
+}
