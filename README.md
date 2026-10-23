@@ -17,7 +17,7 @@ A Windows-style taskbar for [Omarchy](https://omarchy.org/).
 ## Install
 
 ```bash
-omarchy plugin add https://github.com/<you>/omarchy-winbar.git --yes
+omarchy plugin add https://github.com/finleydavid2026-beep/omarchy-winbar.git --yes
 ~/.config/omarchy/plugins/winbar/install.sh
 ```
 
