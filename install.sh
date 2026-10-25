@@ -122,8 +122,13 @@ center = [
     {"id": "winbar"},
     {"id": "winsearch", "type": "qml"},
 ]
-if hotbar_entry is not None:
-    center.append(hotbar_entry)
+if hotbar_entry is None:
+    # The previous bar may have replaced the centre entirely (the macOS dock
+    # does), so there is no entry to reuse. Fall back to a default one rather
+    # than dropping the dock from the layout.
+    hotbar_entry = {"id": hotbar}
+    print("    no existing hotbar entry; using a default one")
+center.append(hotbar_entry)
 
 # Keep the user's clock if they have one, otherwise a sensible default.
 clock = None
